@@ -16,9 +16,11 @@ def mul_func(a: float, b: float) -> float:
     # return "ZUTOMAYO"
     return a * b
 
+
 @app.get("/")
 def home():
     return {"status": "online", "message": "This is simple calculator API"}
+
 
 @app.get("/add")
 def calculate_add(a: float, b: float):
